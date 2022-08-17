@@ -4,22 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
-class MainActivity : AppCompatActivity() {
+class SingUpActivity : AppCompatActivity() {
     lateinit var tvSingUp:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Thread.sleep(2000)
-        val splashScreen = installSplashScreen()
-        setContentView(R.layout.activity_main)
-
-        tvSingUp = findViewById(R.id.login_tv_singup)
+        setContentView(R.layout.activity_sing_up)
+        tvSingUp = findViewById(R.id.singup_tv_login)
 
         tvSingUp.setOnClickListener{
-            val intent =Intent(this,SingUpActivity::class.java)
+            val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
-
     }
 }
