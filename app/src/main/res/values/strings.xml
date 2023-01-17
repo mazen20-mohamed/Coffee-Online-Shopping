@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">CoffeeOnlineShopping</string>
+    <string name="app_name">Coffee</string>
+    <string name="title_menu">Home</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="UserName">User Name</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">sign in</string>
+    <string name="name">Name</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="addCart">Add to Cart</string>
+    <string name="total">Total</string>
+    <string name="editProfile">Edit profile</string>
+    <string name="logout">Logout</string>
+    <string name="Update">Update</string>
 </resources>

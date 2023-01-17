@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -14,9 +13,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/aclonica"
-        android:text="Wellcom in our coffee app"
+        android:gravity="center"
+        android:text="Welcome in coffee app"
         android:textColor="#000"
-        android:textSize="26sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
-
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -56,6 +56,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:inputType="textPassword"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -69,24 +70,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="log in"
-        android:backgroundTint="#E68D09"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Forgot Password?"
-        android:textSize="20sp"
-        android:textColor="#2196F3"
-        android:gravity="center"
-
-        app:layout_constraintEnd_toEndOf="@+id/login_btn_login"
-        app:layout_constraintStart_toStartOf="@+id/login_btn_login"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn_login" />
 
     <TextView
         android:id="@+id/textView3"
@@ -100,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/login_btn_login" />
 
     <TextView
         android:id="@+id/login_tv_singup"
